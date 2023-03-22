@@ -1,13 +1,17 @@
 
 import Body from "./components/Body";
-import NavBar from "./components/NavBar";
+import { motion, useScroll } from "framer-motion";
+import "./Styles/Body.css"
+
 
 function App() {
+  const { scrollYProgress } = useScroll();
   return (
-    <div >
-<Body/>
-
-    </div >
+    // <motion.div className='progress-bar' style={{ scaleX: scrollYProgress }} >
+     <>
+      <Body />
+      </>
+    // </motion.div >
   );
 }
 
