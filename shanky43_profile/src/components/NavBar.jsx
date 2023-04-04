@@ -27,7 +27,7 @@ const NavBar = () => {
   const btnRef = React.useRef()
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <>
+    <div id="nav-menu">
       <Flex maxW='100%' style={{ margin: "0%", padding: "0%" }} justifyContent="flex-end" >
         <Flex
           pos={"fixed"}
@@ -284,7 +284,7 @@ const NavBar = () => {
 
 
 
-    </>
+    </div>
 
   )
 }
