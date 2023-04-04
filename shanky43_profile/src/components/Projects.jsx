@@ -11,7 +11,7 @@ import { motion, spring, useAnimation } from "framer-motion"
 import FamousFriedFeast from "../videos/fff.mp4"
 import ShoppingRoom from "../videos/ShoppingRoom.mp4"
 import ShopDigital from "../videos/ShopDigital.mp4"
-// import Fashique from "../videos/Fashique.mp4"
+import Fashique from "../videos/Fashique.mp4"
 import { useInView } from "react-intersection-observer"
 
 
