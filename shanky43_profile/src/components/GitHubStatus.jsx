@@ -1,7 +1,27 @@
 import { Box, Center, Heading, SimpleGrid, Spacer, Stack, VStack } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import GitHubCalendar from 'github-calendar';
+import { useMediaQuery } from "@chakra-ui/react"
+
 
 const GitHubStatus = () => {
+
+    // const [displayCalender, setDisplayCalender] = useState(true)
+    const [isMobileView] = useMediaQuery("(max-width: 1040px)")
+
+    useEffect(() => {
+        const username = 'Shanky43';
+
+        GitHubCalendar('.calendar', username);
+        GitHubCalendar('.calendar', username, { responsive: true });
+
+        GitHubCalendar('.calendar', username, {
+            proxy(username) {
+                return fetch(`https://your-proxy.com/github?user=${username}`);
+            }
+        }).then(r => r.text());
+    }, []);
+
     return (
         <div >
             <Box pt="5%" textAlign={"center"} bgColor={"black"} margin={["auto", "auto", "auto", "auto"]}><Heading as={"h1"} size={"2xl"} color="#e4002b">GIT-HUB STATS</Heading></Box>
@@ -41,9 +61,20 @@ const GitHubStatus = () => {
 
                 </Stack>
             </Center>
+            {!isMobileView ? <Center style={{ backgroundColor: 'black' }}>
+                <Box p="5%" aspectRatio="1">
+                    <script p="2" src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                    <link p="10" rel="stylesheet" textAlign="Center" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+                    <style>
+                        {`.js-calendar-graph > h2 {color: #e4002b;}`}
+                    </style>
+                    <div className="calendar" data-username="Shanky43"></div>
+                </Box>
+            </Center> : null}
 
 
-        </div>
+
+        </div >
     )
 }
 
