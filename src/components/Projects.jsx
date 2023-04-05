@@ -111,9 +111,10 @@ const Projects = () => {
                             max-width="100%"
                         >
                             <Center mt={["20%", "1%"]} pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "90%"]} height={["40vh", "80vh"]} margin={["auto", "auto", "auto", "auto"]} >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "90%"]} height={["40vh", "80vh"]} margin={["auto", "auto", "auto", "auto"]} class="project-card"  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "90%", "90%", "50%"]} height={["80vh", "80vh", "80vh", "60vh"]} mr={["1", "5", "5", "8"]} ml={["5", "0"]} margin={["auto", "auto"]}
+                                        class="project-card"
                                         style={{
                                             boxShadow: "0 0 20px rgba(255, 255, 255, 0.2)",
                                             borderRadius: "2%",
@@ -191,9 +192,9 @@ const Projects = () => {
                         // overflow-x="hidden"
                         >
                             <Center mt="1%" pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
-                                    <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
+                                    <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]} class="project-card" >
                                         <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Famous Fried Feast</Text>
                                         <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>Kentucky Fried Chicken KFC. (clone)</Text>
                                         <Box>
@@ -270,7 +271,7 @@ const Projects = () => {
                             animate={divAnimation3}
                         >
                             <Center mt={["20%", "1%"]} pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "90%"]} height={["40vh", "80vh"]} margin={["auto", "none"]} >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "90%"]} height={["40vh", "80vh"]} margin={["auto", "none"]} class="project-card" >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
 
                                     <Box width={["90%", "90%", "90%", "50%"]} height={["80vh", "80vh", "80vh", "60vh"]} mr={["1", "5", "5", "8"]} ml={["5", "0"]} margin={["auto", "auto"]}
@@ -350,7 +351,7 @@ const Projects = () => {
                             animate={divAnimation4}
                         >
                             <Center mt="1%" pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
                                         <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Shop Digital</Text>

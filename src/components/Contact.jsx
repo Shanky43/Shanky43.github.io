@@ -104,10 +104,12 @@ export default function Contact() {
                                             }}
                                             onClick={onCopy}
                                             isRound
+                                            id="contact-email"
+
                                         />
                                     </Tooltip>
 
-                                    <Link href="https://github.com/Shanky43" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://github.com/Shanky43" id="user-detail-name" target="_blank" rel="noopener noreferrer">
                                         <IconButton
                                             aria-label="github"
                                             variant="ghost"
@@ -138,12 +140,13 @@ export default function Contact() {
                                             }}
                                             isRound
                                             onClick={onCopyPhone}
+                                            id="contact-phone"
                                         />
 
                                     </Tooltip>
 
 
-                                    <Link href="https://www.linkedin.com/in/shankar-s-1323671a4" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://www.linkedin.com/in/shankar-s-1323671a4" id="contact-linkedin" target="_blank" rel="noopener noreferrer">
                                         <IconButton
                                             aria-label="linkedin"
                                             variant="ghost"

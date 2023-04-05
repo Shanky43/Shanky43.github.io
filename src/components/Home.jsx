@@ -22,7 +22,7 @@ const Home = () => {
                     <VStack>
                         <HStack>
                             <Heading as={"h1"} size={"3xl"} m="10" textAlign={"center"}>HEY, I'M
-                                <Text as={"span"} color='#e4002b'> {"SHANKAR S "|| <Skeleton />}</Text>
+                                <Text as={"span"} color='#e4002b' id="user-detail-name"> {"SHANKAR S " || <Skeleton />}</Text>
                                 <TypeWriterEffect
                                     textStyle={{
                                         fontFamily: 'inherit',
@@ -46,7 +46,7 @@ const Home = () => {
 
                             </Heading>
                         </HStack>
-                        <Center> <Text w={"70%"} fontSize="2em" textAlign="center">A Full Stack Web Developer focused on building the Frontend of Websites and Web Applications that leads to the success of the overall product</Text></Center>
+                        <Center> <Text w={"70%"} fontSize="2em" textAlign="center" id="user-detail-name">A Full Stack Web Developer focused on building the Frontend of Websites and Web Applications that leads to the success of the overall product</Text></Center>
                     </VStack>
                 </Center>
             </Container>

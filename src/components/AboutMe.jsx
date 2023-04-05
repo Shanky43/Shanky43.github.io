@@ -7,13 +7,14 @@ const AboutMe = () => {
   const wordSpacing = useBreakpointValue({ base: ".1em", md: "normal" })
 
   return (
-    <Container maxW={"100%"} h={["50%", "80%", "80%", "100%"]} id='aboutme'
+    <Container maxW={"100%"} h={["50%", "80%", "80%", "100%"]} 
       // backgroundImage={`url(${imageurl})`}
       backgroundRepeat="no-repeat"
       backgroundSize="100% 150%"
       backgroundColor="black"
       pb="10%"
       margin={["auto", "auto", "auto", "auto"]}
+      id="about" class="about section"
     >
       <Center pt="15%" margin={["auto", "auto", "auto", "auto"]}><Heading as={"h1"} size={"2xl"} color="#e4002b">ABOUT ME</Heading></Center>
       <Center>
