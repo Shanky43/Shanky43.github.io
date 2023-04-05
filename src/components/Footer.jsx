@@ -1,11 +1,11 @@
 import { Box, Container, Heading, Text, Center, Divider, Button } from '@chakra-ui/react'
-import React, { useState } from 'react'
-import { BsFillArrowUpCircleFill, BsFillArrowDownCircleFill } from 'react-icons/bs';
+import React from 'react'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
 
 const Footer = () => {
-  // const [position, setposition] = useState("home")
+
   return (
     <div id='footer'>
       <Container maxW={"100%"} pt="10%" bg="black" pb={"1%"}>
