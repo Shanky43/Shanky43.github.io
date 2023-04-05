@@ -1,7 +1,11 @@
-import { Box, Container, Heading, Text, Center, Divider } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Container, Heading, Text, Center, Divider, Button } from '@chakra-ui/react'
+import React, { useState } from 'react'
+import { BsFillArrowUpCircleFill, BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
+
 
 const Footer = () => {
+  // const [position, setposition] = useState("home")
   return (
     <div id='footer'>
       <Container maxW={"100%"} pt="10%" bg="black" pb={"1%"}>
@@ -21,6 +25,11 @@ const Footer = () => {
         <hr />
         <Center p="10"> <p><Text as="span" color='#e4002b'>©</Text> Copyright 2023. Made by Shankar <Text as="span" color='#e4002b'>S</Text></p></Center>
       </Container>
+      <div>
+        <Box style={{ position: 'fixed', bottom: 50, right: 50 }}>
+          <Button bgColor={"#e4002b"} _hover={{ color: "#e4002b", bgColor: "white" }}><Link to={"home"} spy={true} smooth={true} offset={50} duration={500}><BsFillArrowUpCircleFill /></Link></Button>
+        </Box>
+      </div>
     </div>
   )
 }
