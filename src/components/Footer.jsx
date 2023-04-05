@@ -3,9 +3,7 @@ import React from 'react'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
-
 const Footer = () => {
-
   return (
     <div id='footer'>
       <Container maxW={"100%"} pt="10%" bg="black" pb={"1%"}>

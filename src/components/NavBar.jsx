@@ -7,10 +7,10 @@ import {
   DrawerContent, DrawerCloseButton, useColorMode,
 } from '@chakra-ui/react'
 import React from 'react'
-// import AnimatePresence from '@chakra-ui/transition';
+// import AnimatePresence from '@chakra-ui/transition'  MoonIcon, SunIcon;
 import { Link } from 'react-scroll';
 import resume from "../files/Shankar-S-Resume.pdf"
-import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 import { useDisclosure } from "@chakra-ui/react"
 
