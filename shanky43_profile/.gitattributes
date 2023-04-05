@@ -1,3 +1,0 @@
-path/to/Fashique.com.mp4 filter=lfs diff=lfs merge=lfs -text
-../videos/Fashique.mp4 filter=lfs diff=lfs merge=lfs -text
-../videos/AddFashique.mp4 filter=lfs diff=lfs merge=lfs -text
