@@ -7,16 +7,16 @@ const AboutMe = () => {
   const wordSpacing = useBreakpointValue({ base: ".1em", md: "normal" })
 
   return (
-    <Container maxW={"100%"} h={["50%", "80%", "80%", "100%"]} 
-      // backgroundImage={`url(${imageurl})`}
+    <Container maxW={"100%"} h={["50%", "80%", "80%", "100%"]}
       backgroundRepeat="no-repeat"
       backgroundSize="100% 150%"
-      backgroundColor="black"
+      bgColor="black"
       pb="10%"
       margin={["auto", "auto", "auto", "auto"]}
       id="about" class="about section"
     >
-      <Center pt="15%" margin={["auto", "auto", "auto", "auto"]}><Heading as={"h1"} size={"2xl"} color="#e4002b">ABOUT ME</Heading></Center>
+      <Center pt="15%" margin={["auto", "auto", "auto", "auto"]}>
+        <Heading as={"h1"} size={"2xl"} color="#e4002b">ABOUT ME</Heading></Center>
       <Center>
         <Text w={"80%"} mt="10%"
           ml={["auto", "auto", "auto", "auto"]}
@@ -26,6 +26,7 @@ const AboutMe = () => {
           textAlign={"justify"}
           size={["md", "2xl"]}
           wordSpacing={wordSpacing}
+          id="user-detail-intro"
         >
           As a professional full stack web developer, I possess a wealth of knowledge and experience in both front-end and back-end development, utilizing a range of technologies including HTML, CSS, JavaScript, React, Node.js, and MongoDB. My passion lies in creating sleek, responsive interfaces that are tightly integrated with powerful back-end systems, and I am constantly staying up-to-date with the latest trends and practices to deliver optimal results. With a keen eye for detail and a commitment to excellence, I am dedicated to delivering top-tier web solutions that exceed expectations
         </Text>

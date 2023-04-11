@@ -89,6 +89,7 @@ export default function Contact() {
                                     justify="space-around"
                                     direction={{ base: 'row', md: 'column' }}>
                                     <Tooltip
+                                        id="contact-email"
                                         label={hasCopied ? 'Email Copied!' : 'Copy Email'}
                                         closeOnClick={false}
                                         hasArrow>
@@ -105,11 +106,10 @@ export default function Contact() {
                                             onClick={onCopy}
                                             isRound
                                             id="contact-email"
-
                                         />
                                     </Tooltip>
 
-                                    <Link href="https://github.com/Shanky43" id="user-detail-name" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://github.com/Shanky43" id="contact-github" target="_blank" rel="noopener noreferrer">
                                         <IconButton
                                             aria-label="github"
                                             variant="ghost"
@@ -124,6 +124,7 @@ export default function Contact() {
                                         />
                                     </Link>
                                     <Tooltip
+                                        id="contact-phone"
                                         label={hasCopiedphone ? 'Phone Number Copied!' : 'Copy Phone Number'}
                                         closeOnClick={false}
                                         hasArrow
