@@ -41,14 +41,14 @@ const NavBar = () => {
             <HStack>
               <Wrap >
                 <WrapItem >
-                  <Avatar name='Shankar S' class="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
+                  <Avatar name='Shankar S' className="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
                 </WrapItem>
               </Wrap>
               <Heading id="user-detail-name">SHANKAR S</Heading>
             </HStack>
           </Flex>
           <Spacer />
-          <Flex class="nav-link home">
+          <Flex className="nav-link home">
             <Box >
               <Button
                 variant="ghost"
@@ -58,7 +58,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="home" class="nav-link home" spy={true} smooth={true} offset={50} duration={500}>HOME</Link>
+                <Link to="home" className="nav-link home" spy={true} smooth={true} offset={50} duration={500}>HOME</Link>
               </Button>
             </Box>
 
@@ -72,7 +72,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="about" class="nav-link home" spy={true} smooth={true} offset={50} duration={500}>ABOUT</Link>
+                <Link to="about" className="nav-link home" spy={true} smooth={true} offset={50} duration={500}>ABOUT</Link>
               </Button>
             </Box>
             <Box>
@@ -84,7 +84,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="skills" class="nav-link skills" spy={true} smooth={true} offset={50} duration={500}>SKILLS</Link>
+                <Link to="skills" className="nav-link skills" spy={true} smooth={true} offset={50} duration={500}>SKILLS</Link>
               </Button>
             </Box>
             <Box>
@@ -96,7 +96,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="projects" class="nav-link projects" spy={true} smooth={true} offset={50} duration={500}>PROJECTS</Link>
+                <Link to="projects" className="nav-link projects" spy={true} smooth={true} offset={50} duration={500}>PROJECTS</Link>
               </Button>
             </Box>
             <Box>
@@ -108,7 +108,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="contact" class="nav-link contact" spy={true} smooth={true} offset={50} duration={500}>CONTACT</Link>
+                <Link to="contact" className="nav-link contact" spy={true} smooth={true} offset={50} duration={500}>CONTACT</Link>
               </Button>
             </Box>
             <Box>
@@ -120,7 +120,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <a href={resume} class="nav-link resume" download>RESUME</a>
+                <a href={resume} className="nav-link resume" download>RESUME</a>
               </Button>
             </Box>
           </Flex>
@@ -194,7 +194,7 @@ const NavBar = () => {
                 <Flex >
 
                   <Flex flexDir={"column"}
-                    class="nav-link home"
+                    className="nav-link home"
                     w={"100px"}
                     align="right"
                     display={["flex", "flex", "flex", "none"]}
@@ -209,7 +209,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="home" class="nav-link home" >HOME</Link>
+                        <Link to="home" className="nav-link home" >HOME</Link>
                       </Button>
                     </Box>
 
@@ -223,7 +223,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="about" class="nav-link home">ABOUT</Link>
+                        <Link to="about" className="nav-link home">ABOUT</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -235,7 +235,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="skills" class="nav-link skills">SKILLS</Link>
+                        <Link to="skills" className="nav-link skills">SKILLS</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -247,7 +247,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="projects" class="nav-link projects">PROJECTS</Link>
+                        <Link to="projects" className="nav-link projects">PROJECTS</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -259,7 +259,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="contact" class="nav-link contact">CONTACT</Link>
+                        <Link to="contact" className="nav-link contact">CONTACT</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -271,7 +271,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <a href={resume} class="nav-link resume" download>RESUME</a>
+                        <a href={resume} className="nav-link resume" download>RESUME</a>
                       </Button>
                     </Box>
                   </Flex>

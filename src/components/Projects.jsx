@@ -137,11 +137,11 @@ const Projects = () => {
                                     </Box>
                                     <Spacer />
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
-                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Fashique</Text>
+                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} class="project-title">Fashique</Text>
                                         <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>ASOS (clone)</Text>
                                         <Box>
                                             <Text textAlign={["justify", "justify"]} color="white" mt={5} fontSize={["2vh", "1.2em"]}>
-                                                <Text as={"span"} color='white'><Button rounded={"full"} bg="#e4002b" ><a href="https://fashique.vercel.app/" target={"_blank"} without rel="noreferrer">Fashique</a></Button></Text>  is an e-commerce website that specializes in clothing for men and women. It offers a wide range of products such as dresses, tops, shirts, pants, and accessories. The website features a modern design and user-friendly interface, making it easy for customers to navigate and find what they are looking for.
+                                                <Text as={"span"} color='white' class="project-description"><Button rounded={"full"} bg="#e4002b" ><a href="https://fashique.vercel.app/" target={"_blank"} without rel="noreferrer">Fashique</a></Button></Text>  is an e-commerce website that specializes in clothing for men and women. It offers a wide range of products such as dresses, tops, shirts, pants, and accessories. The website features a modern design and user-friendly interface, making it easy for customers to navigate and find what they are looking for.
                                             </Text>
                                             <Box style={{ margin: "auto" }} width={["62%", "100%"]} justifyContent={["center", "left"]} alignItems={["center", "left"]} alignContent={["center", "left"]}>
 
@@ -195,11 +195,11 @@ const Projects = () => {
                                 <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]} class="project-card" >
-                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Famous Fried Feast</Text>
+                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} class="project-title" >Famous Fried Feast</Text>
                                         <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>Kentucky Fried Chicken KFC. (clone)</Text>
                                         <Box>
                                             <Text textAlign={["justify", "justify"]} color="white" mt={5} fontSize={["2vh", "1.2em"]}>
-                                                The <Text as={"span"} color='white'><Button rounded={"full"} bg="#e4002b" ><a href="https://fff-gilt.vercel.app/" target={"_blank"} without rel="noreferrer">Famous Fried Feast FFF</a></Button></Text> website offers a sleek and intuitive platform, providing customers with a seamless online experience to explore the menu, customize orders, and conveniently place an order for delivery or pickup.
+                                                The <Text as={"span"} color='white' class="project-description"><Button rounded={"full"} bg="#e4002b" ><a href="https://fff-gilt.vercel.app/" target={"_blank"} without rel="noreferrer">Famous Fried Feast FFF</a></Button></Text> website offers a sleek and intuitive platform, providing customers with a seamless online experience to explore the menu, customize orders, and conveniently place an order for delivery or pickup.
                                             </Text>
                                             <Box style={{ margin: "auto" }} width={["62%", "100%"]} alignItems={["center", "left"]} alignContent={["center", "left"]}>
 
@@ -298,11 +298,11 @@ const Projects = () => {
                                     </Box>
                                     <Spacer />
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
-                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Shopping Room</Text>
+                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} class="project-title">Shopping Room</Text>
                                         <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>Amazon (clone)</Text>
                                         <Box>
                                             <Text textAlign={["justify", "justify"]} color="white" mt={5} fontSize={["2vh", "1.2em"]}>
-                                                <Text as={"span"} color='white'><Button rounded={"full"} bg="#e4002b" ><a href="https://lustrous-gumption-92216f.netlify.app/" target={"_blank"} without rel="noreferrer">Shopping Room</a></Button></Text> is a leading e-commerce website with a vast product range, fast shipping, and competitive pricing. Its Prime membership program offers additional benefits, and its technological innovations have disrupted traditional retail.
+                                                <Text as={"span"} color='white' class="project-description"><Button rounded={"full"} bg="#e4002b" ><a href="https://lustrous-gumption-92216f.netlify.app/" target={"_blank"} without rel="noreferrer">Shopping Room</a></Button></Text> is a leading e-commerce website with a vast product range, fast shipping, and competitive pricing. Its Prime membership program offers additional benefits, and its technological innovations have disrupted traditional retail.
                                             </Text>
                                             <Box style={{ margin: "auto" }} width={["62%", "100%"]} alignItems={["center", "left"]} alignContent={["center", "left"]}>
 
@@ -354,11 +354,11 @@ const Projects = () => {
                                 <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
-                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} >Shop Digital</Text>
+                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} class="project-title">Shop Digital</Text>
                                         <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>Reliance Digital (clone)</Text>
                                         <Box>
                                             <Text textAlign={["justify", "justify"]} color="white" mt={5} fontSize={["2vh", "1.2em"]}>
-                                                The <Text as={"span"} color='white'><Button rounded={"full"} bg="#e4002b" ><a href="https://shopdigital.netlify.app/" target={"_blank"} without rel="noreferrer">Shop Digital</a></Button></Text>  is a popular e-commerce platform in India that specializes in the sale of electronics and home appliances. It is owned by Shop Digital, which operates a chain of stores across the country.
+                                                The <Text as={"span"} class="project-description" color='white'><Button rounded={"full"} bg="#e4002b" ><a href="https://shopdigital.netlify.app/" target={"_blank"} without rel="noreferrer">Shop Digital</a></Button></Text>  is a popular e-commerce platform in India that specializes in the sale of electronics and home appliances. It is owned by Shop Digital, which operates a chain of stores across the country.
                                             </Text>
                                             <Box style={{ margin: "auto" }} width={["62%", "100%"]} alignItems={["center", "left"]} alignContent={["center", "left"]}>
 
