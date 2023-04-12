@@ -48,7 +48,7 @@ const NavBar = () => {
             </HStack>
           </Flex>
           <Spacer />
-          <Flex zIndex={10}>
+          <Flex zIndex={1000}>
             <Box >
               <Button
 
@@ -182,7 +182,7 @@ const NavBar = () => {
                 <HStack>
                   <Wrap>
                     <WrapItem>
-                      <Avatar name='Shankar S' class="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
+                      <Avatar name='Shankar S'  src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
                     </WrapItem>
                   </Wrap>
                   <Heading>SHANKAR S</Heading>
@@ -210,7 +210,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="home" class="nav-link home" >HOME</Link>
+                        <Link to="home" >HOME</Link>
                       </Button>
                     </Box>
 
@@ -224,7 +224,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="about" class="nav-link about">ABOUT</Link>
+                        <Link to="about" >ABOUT</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -236,7 +236,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="skills" class="nav-link skills">SKILLS</Link>
+                        <Link to="skills" >SKILLS</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -248,7 +248,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="projects" class="nav-link projects">PROJECTS</Link>
+                        <Link to="projects" >PROJECTS</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -260,7 +260,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <Link to="contact" class="nav-link contact">CONTACT</Link>
+                        <Link to="contact">CONTACT</Link>
                       </Button>
                     </Box>
                     <Box>
@@ -272,7 +272,7 @@ const NavBar = () => {
                           bg: "white"
                         }}
                       >
-                        <a href={resume} class="nav-link resume" download>RESUME</a>
+                        <a href={resume}  download>RESUME</a>
                       </Button>
                     </Box>
                   </Flex>
