@@ -188,14 +188,14 @@ const Projects = () => {
                         </motion.div>
                     </div>
                     {/* Famous fried Chicken */}
-                    <div ref={ref2} class="project-card" style={{ zIndex: "-1" }}>
+                    <div ref={ref2} class="project-card" style={{ zIndex: "-1000" }}>
                         <motion.div
                             animate={divAnimation2}
                             position="absolute"
                         // overflow-x="hidden"
                         >
                             <Center mt="1%" pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]}  >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]} >
                                         <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} className="project-title" >Famous Fried Feast</Text>
@@ -235,7 +235,8 @@ const Projects = () => {
                                                             style={{ color: "#2196f3" }}
                                                         ></i>
                                                         <i class="fa-brands  fa-node" style={{ color: "#90c53f" }}></i>
-                                                    </HStack></Center>
+                                                    </HStack>
+                                                    </Center>
                                                 </Box>
                                             </Box>
                                         </Box>
@@ -269,7 +270,7 @@ const Projects = () => {
                         </motion.div>
                     </div>
                     {/* ShoppingRoom */}
-                    <div ref={ref3} class="project-card" style={{ zIndex: "-1" }}>
+                    <div ref={ref3} class="project-card" style={{ zIndex: "-1000" }}>
                         <motion.div
                             animate={divAnimation3}
                         >
@@ -348,12 +349,12 @@ const Projects = () => {
                         </motion.div>
                     </div>
                     {/* ShopDigital */}
-                    <div ref={ref4} class="project-card" style={{ zIndex: "-1" }}>
+                    <div ref={ref4} class="project-card" style={{ zIndex: "-1000" }}>
                         <motion.div
                             animate={divAnimation4}
                         >
                             <Center mt="1%" pb="8">
-                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} class="project-card"  >
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]} >
                                     {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
                                     <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]}>
                                         <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} className="project-title">Shop Digital</Text>

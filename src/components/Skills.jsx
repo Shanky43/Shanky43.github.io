@@ -25,9 +25,10 @@ const Skills = () => {
                     <Heading as="h1" size={["md", "xl"]} color={"white"}>TECHNICAL SKILLS</Heading></Button></Center>
 
                 <Center ml={["auto", "auto", "auto", "auto"]} mr={["auto", "auto", "auto", "auto"]}>
-                    <SimpleGrid columns={[2, 2, 3, 4]}
+                    <SimpleGrid columns={[2, 2, 3, 4]} className="skills-card"
                         spacing={[5, 10]} textAlign="center" alignItems="center" alignContent={"center"} >
                         <Box
+
                             bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
@@ -40,13 +41,14 @@ const Skills = () => {
                             color={"#fc490b"}
                         >
                             <span>
-                                <VStack fontSize={["2em", "3em"]} style={style}>  <Text as="span" class="skills-card-img"><i class={`fa-brands fa-html5`}></i></Text>
-                                    <Text fontSize={[".6em", ".5em"]} ><Text as="span" class="skills-card-name" >HTML5</Text> </Text >
+                                <VStack fontSize={["2em", "3em"]} style={style}>  <Text as="span" className="skills-card-img"><i class={`fa-brands fa-html5`}></i></Text>
+                                    <Text fontSize={[".6em", ".5em"]} ><Text as="span" className="skills-card-name" >HTML5</Text> </Text >
                                 </VStack>
                             </span>
 
                         </Box>
                         <Box
+
                             bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
@@ -57,12 +59,14 @@ const Skills = () => {
                             color={"#2196f3"}
                         >
 
-                            <VStack fontSize={["2em", "3em"]} style={style}> <Text as="span" class="skills-card-img"> <i class="fa-brands  fa-css3-alt"></i></Text>
-                                <Text fontSize={[".6em", ".5em"]} ><Text as="span" class="skills-card-name">CSS3</Text></Text >
+                            <VStack fontSize={["2em", "3em"]} style={style}> <Text as="span" className="skills-card-img"> <i class="fa-brands  fa-css3-alt"></i></Text>
+                                <Text fontSize={[".6em", ".5em"]} ><Text as="span" className="skills-card-name">CSS3</Text></Text >
                             </VStack>
 
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -71,11 +75,13 @@ const Skills = () => {
                             pt={[5, 7, 7, 9]}
                             color={"#f0db4f"}
                         >
-                            <VStack fontSize={["2em", "3em"]} style={style} > <Text as="span" class="skills-card-img"><i class="fa-brands  fa-square-js"></i></Text>
-                                <Text fontSize={[".55em", ".5em"]} ><Text as="span" class="skills-card-name">JAVASCRIPT</Text></Text >
+                            <VStack fontSize={["2em", "3em"]} style={style} > <Text as="span" className="skills-card-img"><i class="fa-brands  fa-square-js"></i></Text>
+                                <Text fontSize={[".55em", ".5em"]} ><Text as="span" className="skills-card-name">JAVASCRIPT</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -85,10 +91,12 @@ const Skills = () => {
                             color={"#68d2e5"}
                         >
                             <VStack fontSize={["2em", "3em"]} style={style}> <Text as="span"><i class="fa-brands  fa-react"></i></Text>
-                                <Text fontSize={[".55em", ".5em"]} ><Text as="span" class="skills-card-name">REACT</Text></Text >
+                                <Text fontSize={[".55em", ".5em"]} ><Text as="span" className="skills-card-name">REACT</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -96,11 +104,13 @@ const Skills = () => {
                             pt={4}
                             color={"white"}
                         >
-                            <VStack fontSize={["1em", "3em"]} style={style} > <img src={redux} alt="redux" width="75%" class="skills-card-img" />
+                            <VStack fontSize={["1em", "3em"]} style={style} > <img src={redux} alt="redux" width="75%" className="skills-card-img" />
                                 <Text fontSize={["1em", ".5em"]} color="#734abc" > <Text as="span">REDUX</Text> </Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -108,11 +118,13 @@ const Skills = () => {
                             pt={[5, 7, 7, 8]}
                             color={"#49c8c2"}
                         >
-                            <VStack fontSize={["2em", "3em"]} style={style} ><Text as="span" class="skills-card-img"><i class="fa-solid  fa-bolt"></i></Text>
-                                <Text fontSize={[".5em", ".5em"]} pt={[1, 4]} ><Text as="span" class="skills-card-name">CHAKRA UI</Text></Text >
+                            <VStack fontSize={["2em", "3em"]} style={style} ><Text as="span" className="skills-card-img"><i class="fa-solid  fa-bolt"></i></Text>
+                                <Text fontSize={[".5em", ".5em"]} pt={[1, 4]} ><Text as="span" className="skills-card-name">CHAKRA UI</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -121,11 +133,13 @@ const Skills = () => {
                             pt={[5, 7, 7, 12]}
                             color={"white"}
                         >
-                            <VStack fontSize={["1em", "3em"]} pt={[0, 4]} style={style}>    <Center><img src={materialUI} class="skills-card-img" alt="materialUI" width={["50", "100"]} /></Center>
-                                <Text fontSize={[".9em", ".5em"]} color="#007fff"  ><Text as="span" class="skills-card-name">MATERIAL UI</Text></Text >
+                            <VStack fontSize={["1em", "3em"]} pt={[0, 4]} style={style}>    <Center><img src={materialUI} className="skills-card-img" alt="materialUI" width={["50", "100"]} /></Center>
+                                <Text fontSize={[".9em", ".5em"]} color="#007fff"  ><Text as="span" className="skills-card-name">MATERIAL UI</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -134,11 +148,13 @@ const Skills = () => {
                             pt={[5, 7, 7, 9]}
                             color={"#90c53f"}
                         >
-                            <VStack fontSize={["2em", "3em"]}> <Text as="span" class="skills-card-img" ><i class=" fa-brands fa-node"></i></Text>
-                                <Text fontSize={[".5em", ".5em"]} pt={[1, 3]} ><Text as="span" class="skills-card-name">NODE JS</Text></Text >
+                            <VStack fontSize={["2em", "3em"]}> <Text as="span" className="skills-card-img" ><i class=" fa-brands fa-node"></i></Text>
+                                <Text fontSize={[".5em", ".5em"]} pt={[1, 3]} ><Text as="span" className="skills-card-name">NODE JS</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -147,12 +163,14 @@ const Skills = () => {
                             pt={[5, 7, 7, 12]}
                             color={"white"}
                         >
-                            <VStack fontSize={["1em", "3em"]} style={style} >    <Center><img src={mongoDB} alt="mongoDB" class="skills-card-img" width={["50", "100"]} /></Center>
-                                <Text fontSize={[".9em", ".5em"]} color="#6cac48" > <Text as="span" class="skills-card-name" >MONGO DB</Text></Text >
+                            <VStack fontSize={["1em", "3em"]} style={style} >    <Center><img src={mongoDB} alt="mongoDB" className="skills-card-img" width={["50", "100"]} /></Center>
+                                <Text fontSize={[".9em", ".5em"]} color="#6cac48" > <Text as="span" className="skills-card-name" >MONGO DB</Text></Text >
                             </VStack>
 
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -161,8 +179,8 @@ const Skills = () => {
                             pt={[5, 7, 7, 12]}
                             color={"white"}
                         >
-                            <VStack fontSize={["1em", "3em"]} style={style}>    <Center>   <img src={expressJS} class="skills-card-img" alt="express" width={["50", "100"]} /></Center>
-                                <Text fontSize={[".9em", ".5em"]} color="#c4443f" ><Text as="span" class="skills-card-name">EXPRESS JS</Text></Text >
+                            <VStack fontSize={["1em", "3em"]} style={style}>    <Center>   <img src={expressJS} className="skills-card-img" alt="express" width={["50", "100"]} /></Center>
+                                <Text fontSize={[".9em", ".5em"]} color="#c4443f" ><Text as="span" className="skills-card-name">EXPRESS JS</Text></Text >
                             </VStack>
                         </Box>
                         <Box bg='#e000e5'
@@ -174,11 +192,13 @@ const Skills = () => {
                             pt={[6, 7, 7, 9]}
                             color={"white"}
                         >
-                            <VStack fontSize={["2em", "3em"]}> <Text as="span" class="skills-card-img"> <i class="fa-brands  fa-github" style={{ backgroundColor: "black", borderRadius: "100%" }}></i></Text>
-                                <Text fontSize={[".4em", ".5em"]} pt={[0, 1]} color="#000000" ><Text as="span" class="skills-card-name" >GIT HUB</Text></Text >
+                            <VStack fontSize={["2em", "3em"]}> <Text as="span" className="skills-card-img"> <i class="fa-brands  fa-github" style={{ backgroundColor: "black", borderRadius: "100%" }}></i></Text>
+                                <Text fontSize={[".4em", ".5em"]} pt={[0, 1]} color="#000000" ><Text as="span" className="skills-card-name" >GIT HUB</Text></Text >
                             </VStack>
                         </Box>
-                        <Box bg='#e000e5'
+                        <Box
+
+                            bg='#e000e5'
                             height={["17vh", "17vh", "17vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
@@ -186,8 +206,8 @@ const Skills = () => {
                             pt={[5, 7, 7, 12]}
                             color={"white"}
                         >
-                            <VStack fontSize={["1em", "3em"]} style={style}>   <Center>   <img src={vsCode} class="skills-card-img" alt="express" width={["50", "100"]} /></Center>
-                                <Text fontSize={[".9em", ".5em"]} pt={[3, 3]} color="#4ca9f4" ><Text as="span" class="skills-card-name">VS CODE</Text></Text >
+                            <VStack fontSize={["1em", "3em"]} style={style}>   <Center>   <img src={vsCode} className="skills-card-img" alt="express" width={["50", "100"]} /></Center>
+                                <Text fontSize={[".9em", ".5em"]} pt={[3, 3]} color="#4ca9f4" ><Text as="span" className="skills-card-name">VS CODE</Text></Text >
                             </VStack>
                         </Box>
                     </SimpleGrid>

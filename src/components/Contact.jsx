@@ -105,7 +105,7 @@ export default function Contact() {
                                             }}
                                             onClick={onCopy}
                                             isRound
-                                            id="contact-email"
+
                                         />
                                     </Tooltip>
 
@@ -141,7 +141,7 @@ export default function Contact() {
                                             }}
                                             isRound
                                             onClick={onCopyPhone}
-                                            id="contact-phone"
+
                                         />
 
                                     </Tooltip>
@@ -233,10 +233,7 @@ export default function Contact() {
             </Flex>
             <Box>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.060515820123!2d77.5908736580463!3d12.964106311558481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d9275bc5cb%3A0xc83f2b73c3356b56!2sAdvaith%20Hyundai%20Service%20Center%2C%20Mission%20Road!5e0!3m2!1sen!2sin!4v1680554498506!5m2!1sen!2sin&mode=dark" width="100%" height="450" style={{ border: 0, filter: "invert(90%)" }} title="Shankar's Address" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
             </Box>
-
-
         </div>
     );
 }

@@ -17,8 +17,8 @@ const AboutMe = () => {
 
       >
         <Center pt="15%" margin={["auto", "auto", "auto", "auto"]}>
-          <Heading as={"h1"} size={"2xl"} color="#e4002b" ><Text as="span" class="about section">ABOUT ME</Text></Heading></Center>
-        <Center class="about section">
+          <Heading as={"h1"} size={"2xl"} color="#e4002b" ><Text as="span" id="about">ABOUT ME</Text></Heading></Center>
+        <Center >
           <Text w={"80%"} mt="10%"
             ml={["auto", "auto", "auto", "auto"]}
             mr={["auto", "auto", "auto", "auto"]}
@@ -28,7 +28,7 @@ const AboutMe = () => {
             size={["md", "2xl"]}
             wordSpacing={wordSpacing}
           >
-            <Text as="span" id="user-detail-intro">
+            <Text as="span" id="user-detail-intro" >
               As a professional full stack web developer, I possess a wealth of knowledge and experience in both front-end and back-end development, utilizing a range of technologies including HTML, CSS, JavaScript, React, Node.js, and MongoDB. My passion lies in creating sleek, responsive interfaces that are tightly integrated with powerful back-end systems, and I am constantly staying up-to-date with the latest trends and practices to deliver optimal results. With a keen eye for detail and a commitment to excellence, I am dedicated to delivering top-tier web solutions that exceed expectations
             </Text>
           </Text>

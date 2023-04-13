@@ -27,12 +27,13 @@ const NavBar = () => {
   const btnRef = React.useRef()
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div id="nav-menu">
+    <div id="nav-menu" >
       <Flex maxW='100%' style={{ margin: "0%", padding: "0%" }} justifyContent="flex-end" >
         <Flex
           pos={"fixed"}
           display={["none", "none", 'none', "flex"]}
           width="100%"
+          zIndex={100}
           // style={fornav}
           pt={6} pb={3} bg={"black"} pl={10} style={fornav} color="white"
           justifyContent={"space-between"}
@@ -41,7 +42,7 @@ const NavBar = () => {
             <HStack>
               <Wrap >
                 <WrapItem >
-                  <Avatar name='Shankar S' class="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
+                  <Avatar name='Shankar S' className="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
                 </WrapItem>
               </Wrap>
               <Heading id="user-detail-name">SHANKAR S</Heading>
@@ -59,7 +60,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="home" class="nav-link home" spy={true} smooth={true} offset={50} duration={500}>HOME</Link>
+                <Link to="home" className="nav-link home" spy={true} smooth={true} offset={50} duration={500}>HOME</Link>
               </Button>
             </Box>
 
@@ -73,7 +74,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="about" class="nav-link about" spy={true} smooth={true} offset={50} duration={500}>ABOUT</Link>
+                <Link to="about" className="nav-link about" spy={true} smooth={true} offset={50} duration={500}>ABOUT</Link>
               </Button>
             </Box>
             <Box>
@@ -85,7 +86,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="skills" class="nav-link skills" spy={true} smooth={true} offset={50} duration={500}>SKILLS</Link>
+                <Link to="skills" className="nav-link skills" spy={true} smooth={true} offset={50} duration={500}>SKILLS</Link>
               </Button>
             </Box>
             <Box>
@@ -97,7 +98,7 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="projects" class="nav-link projects" spy={true} smooth={true} offset={50} duration={500}>PROJECTS</Link>
+                <Link to="projects" className="nav-link projects" spy={true} smooth={true} offset={50} duration={500}>PROJECTS</Link>
               </Button>
             </Box>
             <Box>
@@ -109,10 +110,10 @@ const NavBar = () => {
                   bg: "#e4002b"
                 }}
               >
-                <Link to="contact" class="nav-link contact" spy={true} smooth={true} offset={50} duration={500}>CONTACT</Link>
+                <Link to="contact" className="nav-link contact" spy={true} smooth={true} offset={50} duration={500}>CONTACT</Link>
               </Button>
             </Box>
-            <Box>
+            <Box class="nav-link resume">
               <Button
                 variant="ghost"
                 arial-label="RESUME"
@@ -120,8 +121,9 @@ const NavBar = () => {
                   color: "white",
                   bg: "#e4002b"
                 }}
+                id="resume-button-1"
               >
-                <a href={resume} class="nav-link resume" download>RESUME</a>
+                <a href={resume} id="resume-link-1" download>RESUME</a>
               </Button>
             </Box>
           </Flex>
@@ -182,7 +184,7 @@ const NavBar = () => {
                 <HStack>
                   <Wrap>
                     <WrapItem>
-                      <Avatar name='Shankar S'  src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
+                      <Avatar name='Shankar S' src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
                     </WrapItem>
                   </Wrap>
                   <Heading>SHANKAR S</Heading>
@@ -263,7 +265,7 @@ const NavBar = () => {
                         <Link to="contact">CONTACT</Link>
                       </Button>
                     </Box>
-                    <Box>
+                    <Box >
                       <Button
                         variant="ghost"
                         arial-label="RESUME"
@@ -271,8 +273,9 @@ const NavBar = () => {
                           color: "black",
                           bg: "white"
                         }}
+                        id="resume-button-2"
                       >
-                        <a href={resume}  download>RESUME</a>
+                        <a href={resume} id="resume-link-2" download>RESUME</a>
                       </Button>
                     </Box>
                   </Flex>

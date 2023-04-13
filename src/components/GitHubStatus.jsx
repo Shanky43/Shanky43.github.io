@@ -30,8 +30,8 @@ const GitHubStatus = () => {
                     <VStack>
 
                         <Box pt="15%">
-                            <a href="https://git.io/streak-stats" id="github-streak-stats" >
-                                <img src="https://github-readme-streak-stats.herokuapp.com?user=Shanky43&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png&fire=DF2929&stroke=FF5B5B&ring=FF182C" alt="GitHub Streak" />
+                            <a href="https://git.io/streak-stats"  >
+                                <img src="https://github-readme-streak-stats.herokuapp.com?user=Shanky43&theme=dark&date_format=M%20j%5B%2C%20Y%5D&type=png&fire=DF2929&stroke=FF5B5B&ring=FF182C" id="github-streak-stats" alt="GitHub Streak" />
                             </a>
                         </Box>
                     </VStack>
@@ -40,15 +40,15 @@ const GitHubStatus = () => {
             </Box>
             <Center style={{ backgroundColor: 'black' }} pt="5%">
                 <Stack direction={{ base: 'column', md: 'column', lg: 'row' }} gap={["1", "5"]} >
-                    <Box>
+                    <Box >
                         <picture style={{ backgroundColor: 'black', }} h={["100vh", "100vh", "100vh", "100vh"]}>
                             <source
                                 srcSet="https://github-readme-stats.vercel.app/api?username=Shanky43&show_icons=true&theme=dark&count_private=true&title_color=e4002b&icon_color=e4002b&ring=e4002b&hide_border=true"
-                                media="(prefers-color-scheme: dark)" id="github-stats-card"
+                                media="(prefers-color-scheme: dark)"
                             />
                             <source
                                 srcSet="https://github-readme-stats.vercel.app/api?username=Shanky43&show_icons=true&count_private=true&title_color=e4002b&icon_color=e4002b&ring=e4002b&hide_border=true"
-                                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" id="github-stats-card"
+                                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
                             />
                             <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Shanky43&show_icons=true&count_private=true&title_color=e4002b&icon_color=e4002b&ring=e4002b&hide_border=true" alt="" style={{ border: '1px solid white', borderRadius: "10px" }} />
                         </picture>
@@ -62,9 +62,9 @@ const GitHubStatus = () => {
                 </Stack>
             </Center>
             {!isMobileView ? <Center style={{ backgroundColor: 'black' }}>
-                <Box p="5%" aspectRatio="1">
-                    <script p="2" src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-                    <link p="10" rel="stylesheet" textAlign="Center" class="react-activity-calendar" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+                <Box p="5%" aspectRatio="1" >
+                    <script p="2" src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" class="react-activity-calendar"></script>
+                    <link p="10" rel="stylesheet" textAlign="Center" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
                     <div className="calendar" data-username="Shanky43"></div>
                 </Box>
