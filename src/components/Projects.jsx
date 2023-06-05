@@ -12,10 +12,16 @@ import FamousFriedFeast from "../videos/fff.mp4"
 import ShoppingRoom from "../videos/ShoppingRoom.mp4"
 import ShopDigital from "../videos/ShopDigital.mp4"
 import Fashique from "../videos/Fashique.mp4"
+import healthcube from "../videos/HealthCube.mp4"
 import { useInView } from "react-intersection-observer"
+import mongoDB from "../images/mongoDB.png"
+import expressJS from "../images/express.png"
 
 
 const Projects = () => {
+    const { ref: ref0, inView: inView0 } = useInView({
+        threshold: 0.2
+    })
     const { ref: ref1, inView: inView1 } = useInView({
         threshold: 0.2
     })
@@ -28,10 +34,27 @@ const Projects = () => {
     const { ref: ref4, inView: inView4 } = useInView({
         threshold: 0.2
     })
+
+    const divAnimation0 = useAnimation()
     const divAnimation1 = useAnimation()
     const divAnimation2 = useAnimation()
     const divAnimation3 = useAnimation()
     const divAnimation4 = useAnimation()
+
+    // Animations for the zero element
+    useEffect(() => {
+        if (inView0) {
+            divAnimation0.start({
+                x: 0,
+                transition: { type: "spring", duration: 1, bounce: 0.3 }
+            })
+        }
+        if (!inView0) {
+            divAnimation0.start({ x: "-100vw" });
+
+
+        }
+    }, [inView0, divAnimation0])
 
     // Animations for the first element
     useEffect(() => {
@@ -104,6 +127,91 @@ const Projects = () => {
                 <Center><Heading as="h1" size={"2xl"} color="#e4002b" >PROJECTS</Heading></Center>
                 <motion.Box
                 >
+                    {/* health Cube */}
+                    <div ref={ref0} class="project-card" style={{ zIndex: "-1000" }}>
+                        <motion.div
+                            animate={divAnimation0}
+                            position="absolute"
+                        // overflow-x="hidden"
+                        >
+                            <Center mt="1%" pb="8">
+                                <Stack minH={'100vh'} align={'center'} justify={'center'} direction={{ base: 'column', md: 'column', lg: 'row' }} width={["100%", "100%", "100%", "90%"]} height={["40vh", "50vh", "50vh", "80vh"]} margin={["auto", "none"]}  >
+                                    {/* <Flex  flex={1} align={'center'} justify={'center'}> */}
+                                    <Box width={["90%", "100%", "90%", "40%"]} height={["100vh", "100vh", "100vh", "60vh"]} ml={["1", "10"]} mr={["1", "0"]} pt={[20, 10, 10, 1]} >
+                                        <Text fontSize={["1.5em", "3em"]} color="#66d1e5" fontWeight={"bold"} className="project-title" >Health Cube</Text>
+                                        <Text fontSize={["1em", "1.5em"]} fontWeight={"bold"} color='#e4002b'>Tata 1mg (clone)</Text>
+                                        <Box>
+                                            <Text textAlign={["justify", "justify"]} color="white" mt={5} fontSize={["2vh", "1.2em"]}>
+                                                The <Text as={"span"} color='white' className="project-description"><Button rounded={"full"} bg="#e4002b" ><a href="https://healthcube-bisht1418.vercel.app/" class="project-deployed-link" target={"_blank"} without rel="noreferrer">Health Cube</a></Button></Text> provides e-consultation services, allowing users to connect with healthcare professionals remotely. This feature offers convenience, accessibility, and personalized medical advice, bridging the gap between patients and doctors.
+                                            </Text>
+                                            <Box style={{ margin: "auto" }} width={["62%", "100%"]} alignItems={["center", "left"]} alignContent={["center", "left"]}>
+
+                                                <HStack>
+                                                    <Center m="4"><Button bgColor={"#e4002b"} _hover={{ bg: "#e4002b" }}
+                                                        rounded="10"
+                                                        color="white" fontSize={"1em"}> <a href="https://healthcube-bisht1418.vercel.app/" class="project-deployed-link" target="_blank" without rel="noreferrer"> DEMO &nbsp;<i class="fa-regular fa-clone"></i></a></Button>
+                                                    </Center>
+                                                    <Box size="sm" >
+                                                        <Center ><Button bgColor={"#e4002b"} _hover={{ bg: "#e4002b" }}
+                                                            rounded="10"
+                                                            color="white" fontSize={"1em"}> <a href="https://github.com/Shanky43/subdued-stocking-2928" target={"_blank"} class="project-github-link" without rel="noreferrer"> CODE  &nbsp;<i class="fa-brands fa-github"></i></a></Button> </Center>
+                                                    </Box>
+                                                </HStack>
+
+                                            </Box>
+                                            {/* teckStack */}
+                                            <Box>
+                                                <Center m="4"><Button bgColor={"#e4002b"} _hover={{ bg: "#e4002b" }}
+                                                    rounded="full"
+                                                    color="white">TECH STACK</Button>
+                                                </Center>
+                                                <Box size="sm" >
+                                                    <Center > <HStack gap={5} fontSize={["2em", "3em"]} className="project-tech-stack">
+                                                        <i class="fa-brands  fa-react"
+                                                            style={{ color: "#68d2e5" }}
+                                                        ></i>
+                                                        <i class="fa-solid  fa-bolt" style={{ color: "#49c8c2" }}></i>
+                                                        <i class="fa-brands fa-css3-alt"
+                                                            style={{ color: "#2196f3" }}
+                                                        ></i>
+                                                        <i class="fa-brands  fa-node" style={{ color: "#90c53f" }}></i>
+                                                        <img src={mongoDB} alt="mongoDB" className="skills-card-img" width={["50", "100"]} />
+                                                        <img src={"https://hackersandslackers-cdn.storage.googleapis.com/2020/05/express.png"} className="skills-card-img" alt="express" style={{ color: "white" }} width={["50", "100"]} />
+                                                    </HStack>
+                                                    </Center>
+                                                </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    <Spacer />
+                                    <Box width={["90%", "90%", "90%", "50%"]} height={["80vh", "80vh", "80vh", "60vh"]} mr={["1", "5", "5", "8"]} ml={["5", "0"]} margin={["auto", "auto"]}
+                                        style={{
+                                            boxShadow: "0 0 20px rgba(255, 255, 255, 0.2)",
+                                            borderRadius: "2%",
+                                            overflow: "hidden",
+                                        }}
+                                    >
+
+                                        <video
+                                            src={healthcube}
+                                            autoPlay
+                                            loop
+                                            controls={false}
+                                            muted
+                                            style={{
+                                                objectFit: "fill",
+                                                width: "100%",
+                                                height: "100%",
+                                                borderRadius: "2%"
+                                            }}
+                                        />
+                                    </Box>
+                                    {/* </Flex> */}
+                                </Stack >
+                            </Center>
+                        </motion.div>
+                    </div>
+                    {/* fashique */}
                     <div ref={ref1} class="project-card" style={{ zIndex: "-1000" }}>
                         <motion.div
                             animate={divAnimation1}
