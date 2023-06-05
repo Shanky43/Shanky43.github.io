@@ -4,15 +4,16 @@ import {
   HStack, Stack,
   IconButton, Button, Spacer, Drawer,
   DrawerHeader, DrawerBody, DrawerOverlay,
-  DrawerContent, DrawerCloseButton, useColorMode,
+  DrawerContent, DrawerCloseButton, useColorMode, Text,
 } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 // import AnimatePresence from '@chakra-ui/transition'  MoonIcon, SunIcon;
 import { Link } from 'react-scroll';
 import resume from "../files/Shankar-S-Resume.pdf"
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-
+import { HiEye } from 'react-icons/hi';
 import { useDisclosure } from "@chakra-ui/react"
+import { AiOutlineDownload } from 'react-icons/ai';
 
 
 const fornav = {
@@ -26,6 +27,7 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
   const { colorMode, toggleColorMode } = useColorMode();
+  const [showIcon, setShowIcon] = useState(false)
   return (
     <div id="nav-menu" >
       <Flex maxW='100%' style={{ margin: "0%", padding: "0%" }} justifyContent="flex-end" >
@@ -41,11 +43,11 @@ const NavBar = () => {
           <Flex>
             <HStack>
               <Wrap >
-                <WrapItem >
+                {/* <WrapItem >
                   <Avatar name='Shankar S' className="home-img" src='https://avatars.githubusercontent.com/u/112791993?v=4' bg="yellow" />
-                </WrapItem>
+                </WrapItem> */}
               </Wrap>
-              <Heading id="user-detail-name">SHANKAR S</Heading>
+              <Heading id="user-detail-name"><Text as={"span"} color={"#e4002b"}>S</Text>HANKAR.<Text as={"span"} color={"#e4002b"}>S</Text></Heading>
             </HStack>
           </Flex>
           <Spacer />
@@ -114,17 +116,40 @@ const NavBar = () => {
               </Button>
             </Box>
             <Box class="nav-link resume">
-              <Button
-                variant="ghost"
-                arial-label="RESUME"
-                _hover={{
-                  color: "white",
-                  bg: "#e4002b"
-                }}
-                id="resume-button-1"
-              >
-                <a href={resume} id="resume-link-1" download>RESUME</a>
-              </Button>
+              {showIcon === false ?
+                <Button
+                  variant="ghost"
+                  arial-label="RESUME"
+                  _hover={{
+                    color: "white",
+                    bg: "#e4002b"
+                  }}
+                  // id="resume-button-1"
+                  onClick={() => setShowIcon(!showIcon)}
+                >
+                  RESUME
+                </Button> : <Button
+                  variant="ghost"
+                  arial-label="RESUME"
+                  _hover={{
+                    color: "white",
+                    bg: "#e4002b"
+                  }}
+                  bg="#e4002b"
+                  id="resume-button-1"
+                  onClick={() => setShowIcon(!showIcon)}
+                  w="100px"
+                >
+                  <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
+                    <Box> <a href="https://drive.google.com/file/d/1-VtrxibWLoPWAmMKkBASzBZxDCYIsaQm/view?usp=sharing" target='_blank'><HiEye size={24} /></a></Box>
+                    <Box><a href={resume} id="resume-link-1" download><AiOutlineDownload size={24} /></a></Box>
+
+                  </Box>
+
+                  {/*  */}
+
+                </Button>
+              }
             </Box>
           </Flex>
           <Stack direction={'row'} spacing={7} placement="right">

@@ -30,7 +30,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             _hover={{
@@ -50,7 +50,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -67,7 +67,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -82,7 +82,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -97,7 +97,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -111,7 +111,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -125,7 +125,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -140,7 +140,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -155,7 +155,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -171,7 +171,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -184,7 +184,7 @@ const Skills = () => {
                             </VStack>
                         </Box>
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
 
@@ -199,7 +199,7 @@ const Skills = () => {
                         <Box
 
                             bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -224,7 +224,7 @@ const Skills = () => {
                     <SimpleGrid columns={[1, 2, 3, 4]}
                         spacing={10} textAlign="center" alignItems="center" alignContent={"center"} >
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -238,7 +238,7 @@ const Skills = () => {
                             </span>
                         </Box>
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -250,7 +250,7 @@ const Skills = () => {
                             </VStack>
                         </Box>
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -262,7 +262,7 @@ const Skills = () => {
                             </VStack>
                         </Box>
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
@@ -274,7 +274,7 @@ const Skills = () => {
                             </VStack>
                         </Box>
                         <Box bg='#e000e5'
-                            height={["17vh", "17vh", "17vh", "24vh"]}
+                            height={["17vh", "22vh", "22vh", "24vh"]}
                             width={["8em", "15em"]}
                             style={{ background: colorGrad }}
                             rounded={["25", "50"]}
