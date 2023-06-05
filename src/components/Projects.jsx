@@ -117,10 +117,6 @@ const Projects = () => {
         }
     }, [inView4, divAnimation4])
 
-
-
-
-
     return (
         <div id="projects" style={{ overflowX: 'hidden', zIndex: -2000 }}>
             <Container bgColor={"black"} maxW="100%" pt={[10, 20, 20, 20]}>
