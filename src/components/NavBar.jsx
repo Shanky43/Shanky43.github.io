@@ -68,7 +68,7 @@ const NavBar = () => {
           <Flex>
             <HStack>
               <Wrap>
-
+              
               </Wrap>
               <Heading id="user-detail-name"><Text as="span" color={"#e4002b"}>S</Text>HANKAR <Text as="span" color={"#e4002b"}>S</Text></Heading>
             </HStack>
