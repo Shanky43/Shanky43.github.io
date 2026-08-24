@@ -16,10 +16,10 @@ const Home = () => {
         link.href = resume;
         link.download = 'Shankar-S-Resume.pdf';
         link.click();
-        window.open(
-            'https://drive.google.com/file/d/1-VtrxibWLoPWAmMKkBASzBZxDCYIsaQm/view?usp=drive_link',
-            '_blank'
-        );
+        // window.open(
+        //     'https://drive.google.com/file/d/1-VtrxibWLoPWAmMKkBASzBZxDCYIsaQm/view?usp=drive_link',
+        //     '_blank'
+        // );
     };
 
     return (
@@ -80,7 +80,7 @@ const Home = () => {
                                         of the overall product
                                     </Text>
                                 </Center>
-                                <Box class="nav-link resume">
+                                {/* <Box class="nav-link resume">
                                     <ChakraButton
                                         variant="ghost"
                                         bg={"#e4002b"}
@@ -94,7 +94,7 @@ const Home = () => {
                                     >
                                         RESUME
                                     </ChakraButton>
-                                </Box>
+                                </Box> */}
                             </VStack>
                         </Box>
                         <Box
