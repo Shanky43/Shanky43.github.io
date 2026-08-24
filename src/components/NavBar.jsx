@@ -181,7 +181,7 @@ const NavBar = () => {
                 </Link>
               </Button>
             </Box>
-            <Box class="nav-link resume">
+            {/* <Box class="nav-link resume">
               <Button
                 variant="ghost"
                 arial-label="RESUME"
@@ -193,7 +193,7 @@ const NavBar = () => {
                 onClick={handleDownload}
               >
                 RESUME
-              </Button>
+              </Button> */}
             </Box>
           </Flex>
         </Flex>
